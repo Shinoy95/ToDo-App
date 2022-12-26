@@ -1,0 +1,70 @@
+.todo {
+	display: flex;
+	padding: 10px 15px;
+	color: white;
+	background-color:rgba(111, 52, 4, 0.551);
+	border-bottom: 1px solid #DDD;
+	font-size: 25px;
+}
+
+.todo:nth-child(even) {
+	color: white;
+	background-color: rgba(42, 3, 3, 0.225);
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+	color: lightyellow;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+	color:yellowgreen;	
+}
+
+
+
+.todo.done .content {
+	text-decoration: line-through;
+	color: rgba(207, 21, 21, 0.705);
+	text-decoration-color: rgb(0, 0, 0);
+}
+
+.todo-input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	color:black;
+	background-color: #ececb5;
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+}
+.todo-submit{
+	/* background-color: rgb(255, 204, 0); */
+	color: black;
+}
+
+/* .todo-submit {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #4beb0c;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+} */
